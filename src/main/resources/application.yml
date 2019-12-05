@@ -1,0 +1,19 @@
+server:
+  port: 8763
+spring:
+  application:
+    name: consumer-demo
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+    static-path-pattern: /static/**
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/ #注册中心项目的地址和端口
+app:
+  service-url: http://PROVIDER-SERVICE/
+
+
+
