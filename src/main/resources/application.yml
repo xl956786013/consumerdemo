@@ -8,6 +8,8 @@ spring:
       prefix: /WEB-INF/jsp/
       suffix: .jsp
     static-path-pattern: /static/**
+  main:
+    allow-bean-definition-overriding: true # 有相同名字的Feign注册不会重复注册
 eureka:
   client:
     service-url:
